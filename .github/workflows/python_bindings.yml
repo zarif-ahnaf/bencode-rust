@@ -37,6 +37,7 @@ jobs:
             - name: Set up Python (uv)
               uses: astral-sh/setup-uv@v6
               with:
+                  working-directory: crates/python_bindings
                   enable-cache: true
                   cache-dependency-glob: 'uv.lock'
 
@@ -80,6 +81,7 @@ jobs:
             - name: Set up Python (uv)
               uses: astral-sh/setup-uv@v6
               with:
+                  working-directory: crates/python_bindings
                   enable-cache: true
                   cache-dependency-glob: 'uv.lock'
 
@@ -119,6 +121,7 @@ jobs:
             - name: Set up Python (uv)
               uses: astral-sh/setup-uv@v6
               with:
+                  working-directory: crates/python_bindings
                   enable-cache: true
                   architecture: ${{ matrix.platform.target }}
                   cache-dependency-glob: 'uv.lock'
@@ -158,6 +161,7 @@ jobs:
             - name: Set up Python (uv)
               uses: astral-sh/setup-uv@v6
               with:
+                  working-directory: crates/python_bindings
                   enable-cache: true
                   cache-dependency-glob: 'uv.lock'
 
