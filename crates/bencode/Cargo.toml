@@ -1,6 +1,11 @@
 [package]
 name = "bencode"
 version = "0.1.0"
-edition = "2024"
+edition.workspace = true
 
-[dependencies]
+[dev-dependencies]
+criterion = { version = "0.7" }
+
+[[bench]]
+name = "bencode_bench"
+harness = false

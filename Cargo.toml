@@ -5,6 +5,7 @@ edition = "2024"
 resolver = "3"
 members = ["crates/*"]
 
+
 [profile.release]
 opt-level = "z"   # "z" is for size, "3" is for max speed; use "3" for max speed
 lto = true        # Fat LTO for absolute best performance
